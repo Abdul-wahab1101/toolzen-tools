@@ -1,0 +1,45 @@
+{
+  "brand": "ToolZen",
+  "base_url": "https://abdul-wahab1101.github.io/toolzen-tools/",
+  "tool_count": 30,
+  "existing_tool_pages": [
+    "pdf-to-word",
+    "compress-image-to-20kb",
+    "about",
+    "cnic-size-photo",
+    "favicon-generator",
+    "contact",
+    "pdf-to-jpg",
+    "compress-image-to-100kb",
+    "compress-image-to-50kb",
+    "cv-maker",
+    "word-to-pdf",
+    "image-compressor",
+    "image-resizer",
+    "terms",
+    "pdf-split",
+    "pdf-rotate",
+    "passport-photo-maker",
+    "image-to-pdf",
+    "signature-cleaner",
+    "pdf-merge",
+    "image-converter",
+    "privacy-policy",
+    "document-scanner"
+  ],
+  "new_interactive_pages": [
+    "cv-maker",
+    "document-scanner",
+    "pdf-to-word",
+    "word-to-pdf"
+  ],
+  "contact_email": "aw376552@gmail.com",
+  "processing": "Selected files are processed in the browser. PDF/document libraries are loaded from public CDNs. No ToolZen file-upload endpoint is included.",
+  "sharing": "Native file sharing is offered when Web Share API file support exists. WhatsApp action shares the ToolZen page link, not the generated file. Native share destinations such as Drive may depend on device/browser. Direct Google Drive upload OAuth is not included.",
+  "limitations": [
+    "PDF-to-Word extracts selectable text to a simple DOCX; scanned PDFs need OCR, not included.",
+    "Word-to-PDF supports DOCX, but complex formatting may change.",
+    "Document Scanner crops and exports a single page; OCR and automatic perspective correction are not included.",
+    "Passport and CNIC photo presets are size tools only and do not certify official compliance."
+  ]
+}

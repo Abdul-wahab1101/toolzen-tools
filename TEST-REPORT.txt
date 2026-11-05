@@ -1,0 +1,24 @@
+TOOLZEN STATIC VALIDATION REPORT
+================================
+Build checks passed:
+- 30 homepage tool cards: 18 image, 8 PDF, 4 document tools.
+- 25 HTML pages created, including 19 tool landing pages, 4 information pages, homepage and 404.
+- 24 canonical sitemap URLs.
+- Titles, meta descriptions, canonical tags, Open Graph tags and favicons checked on HTML pages.
+- FAQ schema, how-to instructions, related tools and reserved ad placeholder checked on the requested SEO tool pages.
+- Contact email set to aw376552@gmail.com.
+- JavaScript syntax checked with Node.js for homepage and advanced-tools.js.
+- Generated minimal DOCX package structure smoke-tested with python-docx.
+- No email placeholder remains.
+
+Not fully end-to-end tested in a live browser in this build environment:
+- Browser download/share flows on every device and operating system.
+- External CDN availability in each visitor's country/browser.
+- PDF/Word conversions against every possible file format and complex document.
+- Camera permissions and camera hardware variations.
+
+Document tool limits (shown to users):
+- PDF to Word extracts selectable text; it does not reproduce complex layouts/images/tables or OCR scanned PDFs.
+- Word to PDF accepts .docx; complex layout and images may change; legacy .doc unsupported.
+- Document Scanner supports capture/upload, manual crop and JPG/single-page PDF export; no OCR or automatic perspective correction.
+- Direct Google Drive OAuth upload is not included; native sharing may expose Drive as an available destination where supported.

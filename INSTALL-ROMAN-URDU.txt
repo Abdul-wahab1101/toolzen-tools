@@ -1,0 +1,22 @@
+TOOLZEN UPDATE – GITHUB PAR UPLOAD KARNE KA TAREEQA
+====================================================
+
+1. toolzen-final-complete.zip download karo.
+2. Windows Downloads folder mein ZIP par right-click karo.
+3. Extract All par click karo.
+4. Extracted folder open karo. Andar index.html, assets folder, 19 tool folders, about/contact/privacy-policy/terms folders, sitemap.xml, robots.txt aur 404.html milenge.
+5. GitHub par apni toolzen-tools repository kholo.
+6. Add file -> Upload files click karo.
+7. Extracted folder ke ANDAR wali tamam files aur folders select karke upload area mein drag/drop karo. Parent folder ko akela upload mat karna.
+8. Existing index.html aur same-path files replace honi chahiye. GitHub commit page par overwrite/replace changes confirm karo.
+9. Commit changes to main karo.
+10. Repository -> Actions mein Pages deployment successful hone do.
+11. GitHub -> Settings -> Pages -> Visit site click karo.
+12. Browser mein Ctrl + F5 se hard refresh karo.
+
+ZAROORI:
+- ZIP file ko GitHub par upload mat karna; pehle Extract All karna.
+- Folder structure preserve karna. Example: cv-maker/index.html ko cv-maker folder ke andar hi rehna chahiye.
+- GitHub Pages source main / (root) hi rehne do.
+- ToolZen files browser mein process karta hai; PDF/document libraries first use par CDN se load hoti hain.
+- WhatsApp button ToolZen page link share karta hai. Share file button device ka native share sheet kholta hai; Google Drive/WhatsApp destination device aur browser support par depend karti hai. Direct Drive OAuth upload abhi included nahi.
