@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101426">
+  <meta name="description" content="Compress, resize and convert images online. Free browser-based tools that process files on your device.">
+  <title>ToolZen — Free Image & File Tools</title>
+  <style>
+    :root{--bg:#f5f7fb;--ink:#182033;--muted:#6d7486;--line:#e5e9f2;--card:#fff;--navy:#101426;--purple:#7157ed;--purple2:#8b75ff;--mint:#38c7a5;--shadow:0 18px 55px rgba(26,36,69,.09);--radius:22px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}button,input,select{font:inherit}button{cursor:pointer}.wrap{max-width:1160px;margin:auto;padding:0 24px}.topbar{background:rgba(16,20,38,.97);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;color:#fff;text-decoration:none;font-weight:850;font-size:21px;letter-spacing:-.6px}.logo{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,#8b75ff,#5b43d6);display:grid;place-items:center;box-shadow:0 8px 22px rgba(113,87,237,.35)}.logo svg{width:22px}.navlinks{display:flex;align-items:center;gap:26px}.navlinks a{color:#c6c9d4;text-decoration:none;font-size:14px;font-weight:600}.navlinks a:hover{color:#fff}.navright{display:flex;align-items:center;gap:12px}.freepill{border:1px solid rgba(56,199,165,.35);color:#82e6ce;background:rgba(56,199,165,.09);padding:7px 12px;border-radius:99px;font-size:12px;font-weight:750}.menubtn{display:none;border:1px solid rgba(255,255,255,.18);background:transparent;color:#fff;border-radius:11px;padding:8px 11px;font-size:20px}.hero{background:radial-gradient(ellipse at 78% 2%,rgba(119,96,255,.25),transparent 35%),linear-gradient(135deg,#101426,#171e38 70%,#25204a);color:white;padding:62px 0 92px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:42px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#b9b0ff;background:rgba(139,117,255,.13);border:1px solid rgba(139,117,255,.23);padding:7px 12px;border-radius:99px;font-weight:750;font-size:12px;letter-spacing:.3px}.eyebrow i{width:7px;height:7px;background:var(--mint);border-radius:50%;box-shadow:0 0 0 4px rgba(56,199,165,.13)}h1{font-size:clamp(38px,5vw,61px);line-height:1.05;letter-spacing:-2.7px;margin:20px 0 17px;max-width:650px}.gradient{background:linear-gradient(90deg,#a99aff,#68e0c4);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:560px;color:#c4c8d8;font-size:17px;line-height:1.75;margin:0}.hero-points{display:flex;flex-wrap:wrap;gap:18px;margin-top:26px;color:#dce0eb;font-size:13px}.hero-points span{display:flex;align-items:center;gap:7px}.check{color:#65dfc0;font-weight:900}.hero-art{position:relative;min-height:270px;display:grid;place-items:center}.orb{position:absolute;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle at 35% 30%,rgba(139,117,255,.5),rgba(56,199,165,.08) 55%,transparent 70%);filter:blur(8px)}.mock{position:relative;width:min(100%,390px);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.17);backdrop-filter:blur(18px);border-radius:23px;padding:19px;box-shadow:0 24px 70px rgba(0,0,0,.25);transform:rotate(2deg)}.mock-top{display:flex;justify-content:space-between;align-items:center;color:#fff;font-size:13px;font-weight:750;margin-bottom:15px}.mock-badge{font-size:10px;color:#83e6d0;background:rgba(56,199,165,.13);padding:5px 8px;border-radius:99px}.mock-drop{border:1px dashed rgba(255,255,255,.32);border-radius:15px;padding:24px 12px;text-align:center;background:rgba(255,255,255,.04)}.mock-icon{font-size:31px}.mock-drop b{display:block;margin-top:7px;color:#fff}.mock-drop small{color:#bfc5d7}.mock-bars{display:grid;gap:9px;margin-top:15px}.mock-line{height:8px;border-radius:9px;background:rgba(255,255,255,.12);overflow:hidden}.mock-line:after{content:"";display:block;height:100%;width:72%;background:linear-gradient(90deg,#8b75ff,#58d9b9);border-radius:9px}.main{margin-top:-42px;position:relative;padding-bottom:70px}.tool-shell{background:var(--card);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow);overflow:hidden}.shell-head{padding:25px 30px 18px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:15px}.shell-head h2{margin:0;font-size:20px;letter-spacing:-.5px}.shell-head p{margin:4px 0 0;color:var(--muted);font-size:13px}.local-tag{display:flex;align-items:center;gap:7px;color:#15896d;font-size:12px;font-weight:750;background:#e9fbf5;border-radius:99px;padding:8px 12px;white-space:nowrap}.tabs{display:flex;gap:7px;padding:17px 30px 0;flex-wrap:wrap}.tab{border:1px solid transparent;background:#f4f5fa;color:#687084;padding:10px 16px;border-radius:12px;font-size:13px;font-weight:750}.tab.active{background:#f0edff;color:#5b45d5;border-color:#ded7ff}.panel{padding:22px 30px 30px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}.dropzone{border:1.5px dashed #cbd1e0;background:linear-gradient(180deg,#fbfcff,#f7f8fc);border-radius:18px;padding:29px 20px;text-align:center;transition:.2s;min-height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center}.dropzone.drag{border-color:var(--purple);background:#f4f1ff}.upload-symbol{width:52px;height:52px;border-radius:16px;background:#efedff;color:#6852e4;display:grid;place-items:center;font-size:24px;margin-bottom:12px}.dropzone h3{font-size:16px;margin:0 0 5px}.dropzone p{font-size:12px;color:var(--muted);margin:0 0 15px}.btn{border:0;border-radius:11px;padding:11px 17px;background:linear-gradient(135deg,var(--purple),#5941d1);color:#fff;font-size:13px;font-weight:800;box-shadow:0 8px 18px rgba(113,87,237,.2);transition:transform .15s,box-shadow .15s}.btn:hover{transform:translateY(-1px);box-shadow:0 11px 22px rgba(113,87,237,.27)}.btn.secondary{background:#f1f2f7;color:#394057;box-shadow:none;border:1px solid var(--line)}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}.file-meta{display:none;align-items:center;gap:12px;margin-top:12px;border:1px solid var(--line);border-radius:13px;padding:11px 13px;background:#fff;text-align:left;width:100%}.file-thumb{width:48px;height:48px;object-fit:cover;border-radius:9px;background:#f1f2f6}.file-info{min-width:0;flex:1}.file-info strong{font-size:12px;display:block;overflow-wrap:anywhere}.file-info small{color:var(--muted);font-size:11px}.remove{border:0;background:#f4f5f8;color:#667085;border-radius:8px;padding:7px 9px}.settings{border:1px solid var(--line);border-radius:18px;padding:20px}.settings h3{font-size:15px;margin:0 0 16px}.field{margin-bottom:17px}.field:last-child{margin-bottom:0}.labelrow{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:9px}.labelrow label,.field>label{font-size:12px;font-weight:800;color:#3b4358}.hint{font-size:11px;color:var(--muted)}.presets{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.preset{border:1px solid var(--line);background:#fff;color:#596176;border-radius:9px;padding:9px 5px;font-size:11px;font-weight:750}.preset.active{border-color:#8573ee;background:#f2efff;color:#5941d1;box-shadow:inset 0 0 0 1px #8573ee}.custom-row{display:flex;gap:8px;align-items:center;margin-top:9px}.custom-row input,.control{width:100%;border:1px solid #dce1eb;background:#fff;border-radius:10px;padding:10px 11px;color:var(--ink);outline:none;font-size:13px}.custom-row input:focus,.control:focus{border-color:#8775ee;box-shadow:0 0 0 3px rgba(113,87,237,.1)}.selectrow{display:grid;grid-template-columns:1fr 1fr;gap:10px}.helpbox{display:flex;gap:9px;background:#f7f8fc;border-radius:11px;padding:11px;color:#6a7184;font-size:11px;line-height:1.55}.helpbox b{color:#444c61}.processrow{display:flex;align-items:center;gap:12px;margin-top:18px;flex-wrap:wrap}.processrow .btn{min-width:160px}.status{font-size:12px;color:var(--muted)}.progress{height:7px;background:#eef0f6;border-radius:99px;overflow:hidden;display:none;margin-top:13px}.progress>div{height:100%;width:0;background:linear-gradient(90deg,var(--purple),var(--mint));transition:width .25s}.result{display:none;margin-top:20px;border:1px solid #dcefe8;background:#f6fdf9;border-radius:17px;padding:17px}.result-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.result-head h3{margin:0;font-size:15px}.result-grid{display:grid;grid-template-columns:180px 1fr;gap:18px;align-items:center;margin-top:13px}.result-img{width:100%;max-height:170px;object-fit:contain;background:#fff;border:1px solid #e4eee9;border-radius:12px;padding:5px}.stats{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 14px}.stat{background:#fff;border:1px solid #e2eee8;border-radius:10px;padding:8px 10px;font-size:11px;color:#596176}.stat strong{color:#1c8c70;font-size:13px;display:block}.result-note{font-size:11px;color:#66756e;margin:12px 0 0}.error{display:none;background:#fff4f3;border:1px solid #ffd9d5;color:#aa3b32;padding:12px 14px;border-radius:11px;font-size:12px;margin-top:12px}.workspace-preview{display:none}.below{padding:70px 0}.section-title{text-align:center;max-width:610px;margin:0 auto 33px}.section-title h2{font-size:30px;letter-spacing:-1px;margin:0 0 9px}.section-title p{color:var(--muted);margin:0;font-size:14px}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.feature{background:white;border:1px solid var(--line);border-radius:18px;padding:21px}.feature-icon{width:42px;height:42px;border-radius:13px;background:#f0edff;color:#6b55e6;display:grid;place-items:center;font-size:20px}.feature h3{font-size:15px;margin:14px 0 5px}.feature p{font-size:12px;line-height:1.65;color:var(--muted);margin:0}.coming{display:inline-block;margin-top:10px;color:#8b6a19;background:#fff7df;border-radius:99px;padding:4px 8px;font-size:10px;font-weight:800}.how{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.step{background:#fff;border:1px solid var(--line);border-radius:17px;padding:20px}.num{font-size:12px;font-weight:850;color:#6b55e6;background:#f0edff;border-radius:9px;padding:7px 9px;display:inline-block}.step h3{font-size:14px;margin:12px 0 5px}.step p{font-size:12px;color:var(--muted);margin:0;line-height:1.6}.faq{max-width:760px;margin:auto;display:grid;gap:10px}.faq details{border:1px solid var(--line);background:white;border-radius:13px;padding:15px 17px}.faq summary{font-size:13px;font-weight:750;cursor:pointer}.faq details p{font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:0}.footer{background:#101426;color:#c4c8d6;padding:34px 0}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer small{font-size:11px;color:#9098ae}.footer-links{display:flex;gap:18px}.footer a{color:#c4c8d6;text-decoration:none;font-size:12px}.footer a:hover{color:white}.toast{position:fixed;right:20px;bottom:20px;z-index:9;background:#17203a;color:#fff;padding:12px 16px;border-radius:12px;box-shadow:0 10px 32px rgba(0,0,0,.2);font-size:12px;opacity:0;transform:translateY(10px);transition:.2s;pointer-events:none}.toast.show{opacity:1;transform:translateY(0)}.hidden{display:none!important}
+    @media(max-width:850px){.hero-grid{grid-template-columns:1fr}.hero-art{min-height:230px}.hero{padding:48px 0 78px}.navlinks{gap:15px}.result-grid{grid-template-columns:140px 1fr}}
+    @media(max-width:640px){.wrap{padding:0 15px}.nav{height:66px}.navlinks{display:none;position:absolute;top:66px;left:0;right:0;background:#151b31;padding:15px 22px 20px;flex-direction:column;align-items:flex-start;z-index:10;border-top:1px solid rgba(255,255,255,.1)}.navlinks.open{display:flex}.menubtn{display:block}.freepill{display:none}.hero{padding:42px 0 68px}h1{font-size:41px;letter-spacing:-1.8px}.hero p{font-size:14px}.hero-art{min-height:220px}.mock{max-width:340px}.main{margin-top:-30px}.shell-head{padding:20px 17px 14px;align-items:flex-start;flex-direction:column}.tabs{padding:14px 16px 0}.panel{padding:17px 16px 21px}.grid2{grid-template-columns:1fr}.dropzone{min-height:190px}.presets{grid-template-columns:repeat(4,1fr)}.feature-grid,.how{grid-template-columns:1fr}.below{padding:48px 0}.section-title h2{font-size:25px}.result-grid{grid-template-columns:1fr}.result-img{max-height:220px}.processrow{align-items:stretch}.processrow .btn{width:100%}.footer-inner{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="ToolZen home"><span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.8h8l4 4V20a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 5 20V5.3A1.5 1.5 0 0 1 6.5 3.8Z"/><path d="M14 4v4h4M8 13h8M8 17h6"/></svg></span>TOOLZEN</a>
+      <nav class="navlinks" id="navlinks"><a href="#tools">Tools</a><a href="#how">How it works</a><a href="#privacy">Privacy</a></nav>
+      <div class="navright"><span class="freepill">✦ Free browser tools</span><button class="menubtn" id="menubtn" aria-label="Toggle menu" aria-expanded="false">☰</button></div>
+    </div>
+  </header>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow"><i></i> SIMPLE FILE TOOLS · NO SIGN-UP</span>
+        <h1>Make every image <span class="gradient">form-ready.</span></h1>
+        <p>Compress, resize and convert images in seconds. Set the exact file size you need and keep your files on your device.</p>
+        <div class="hero-points"><span><b class="check">✓</b> Free to use</span><span><b class="check">✓</b> No account needed</span><span><b class="check">✓</b> Files stay in your browser</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="orb"></div><div class="mock"><div class="mock-top"><span>Image compressor</span><span class="mock-badge">READY IN SECONDS</span></div><div class="mock-drop"><div class="mock-icon">▧</div><b>Drop your image here</b><small>JPG · PNG · WEBP</small></div><div class="mock-bars"><div class="mock-line"></div><div class="mock-line" style="width:76%"></div><div class="mock-line" style="width:56%"></div></div></div></div>
+    </div>
+  </section>
+  <main class="main wrap" id="tools">
+    <section class="tool-shell">
+      <div class="shell-head"><div><h2>Free image tools</h2><p>Choose a tool, add an image and download your result.</p></div><span class="local-tag">🔒 Processed on your device</span></div>
+      <div class="tabs" role="tablist" aria-label="Image tools">
+        <button class="tab active" data-tab="compress" role="tab" aria-selected="true">◉ Compress</button>
+        <button class="tab" data-tab="resize" role="tab" aria-selected="false">↗ Resize</button>
+        <button class="tab" data-tab="convert" role="tab" aria-selected="false">⇄ Convert</button>
+      </div>
+      <div class="panel">
+        <div class="grid2">
+          <div>
+            <div class="dropzone" id="dropzone">
+              <div class="upload-symbol">⇧</div><h3>Drop an image here</h3><p>or choose a file from your device · JPG, PNG, WebP</p>
+              <button class="btn" id="chooseBtn" type="button">Choose image</button>
+              <input id="fileInput" type="file" accept="image/jpeg,image/png,image/webp,image/gif" hidden>
+              <div class="file-meta" id="fileMeta"><img class="file-thumb" id="fileThumb" alt="Selected image preview"><div class="file-info"><strong id="fileName"></strong><small id="fileSize"></small></div><button class="remove" id="removeBtn" type="button" aria-label="Remove image">✕</button></div>
+            </div>
+            <div class="workspace-preview" id="previewHint"></div>
+          </div>
+          <div class="settings">
+            <h3 id="settingsTitle">Compression settings</h3>
+            <div id="compressSettings">
+              <div class="field"><div class="labelrow"><label>Target maximum file size</label><span class="hint">Choose a limit</span></div>
+                <div class="presets" id="presets">
+                  <button class="preset" data-kb="20">20 KB</button><button class="preset" data-kb="50">50 KB</button><button class="preset" data-kb="100">100 KB</button><button class="preset active" data-kb="200">200 KB</button><button class="preset" data-kb="500">500 KB</button><button class="preset" data-kb="1024">1 MB</button><button class="preset" data-kb="2048">2 MB</button><button class="preset" data-kb="5120">5 MB</button>
+                </div>
+                <div class="custom-row"><input id="customKB" type="number" min="20" max="5120" placeholder="Custom size (20–5120 KB)"><span class="hint">KB</span></div>
+              </div>
+              <div class="field"><div class="labelrow"><label for="compressFormat">Output format</label><span class="hint">Smaller files</span></div><select class="control" id="compressFormat"><option value="image/webp">WebP (recommended)</option><option value="image/jpeg">JPG</option></select></div>
+              <div class="helpbox"><span>ⓘ</span><span>We aim for your selected maximum size. Very small targets can reduce image dimensions or quality. The result shows the actual file size.</span></div>
+            </div>
+            <div id="resizeSettings" class="hidden">
+              <div class="field"><label for="widthInput">Width (pixels)</label><input class="control" id="widthInput" type="number" min="1" max="10000" value="800"></div>
+              <div class="field"><label for="heightInput">Height (pixels)</label><input class="control" id="heightInput" type="number" min="1" max="10000" value="800"></div>
+              <div class="field"><label><input type="checkbox" id="keepRatio" checked> Keep aspect ratio</label></div>
+              <div class="field"><label for="resizeFormat">Output format</label><select class="control" id="resizeFormat"><option value="image/webp">WebP</option><option value="image/jpeg">JPG</option><option value="image/png">PNG</option></select></div>
+              <div class="helpbox"><span>ⓘ</span><span>Enter the dimensions required by your form. The image is resized in your browser.</span></div>
+            </div>
+            <div id="convertSettings" class="hidden">
+              <div class="field"><label for="convertFormat">Convert to</label><select class="control" id="convertFormat"><option value="image/webp">WebP</option><option value="image/jpeg">JPG</option><option value="image/png">PNG</option></select></div>
+              <div class="helpbox"><span>ⓘ</span><span>Convert common JPG, PNG and WebP images without uploading them to a server. JPG does not support transparency.</span></div>
+            </div>
+            <div class="processrow"><button class="btn" id="processBtn" type="button" disabled>Compress image</button><span class="status" id="status">Choose an image to begin.</span></div>
+            <div class="progress" id="progress"><div id="progressBar"></div></div>
+            <div class="error" id="errorBox" role="alert"></div>
+          </div>
+        </div>
+        <div class="result" id="result" aria-live="polite">
+          <div class="result-head"><h3>✓ Your image is ready</h3><button class="btn" id="downloadBtn" type="button">↓ Download image</button></div>
+          <div class="result-grid"><img class="result-img" id="resultImg" alt="Processed image preview"><div><div class="stats" id="stats"></div><p class="result-note" id="resultNote"></p></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="below wrap" id="how">
+    <div class="section-title"><h2>Everything simple. Nothing complicated.</h2><p>Useful file tools designed for students, job applicants, creators and everyday work.</p></div>
+    <div class="feature-grid">
+      <article class="feature"><div class="feature-icon">◉</div><h3>Target file size</h3><p>Choose a maximum size from 20 KB to 5 MB. See the actual result before downloading.</p></article>
+      <article class="feature"><div class="feature-icon">⚡</div><h3>Fast browser processing</h3><p>Your image is processed locally in your browser. No account or server upload is needed.</p></article>
+      <article class="feature"><div class="feature-icon">▣</div><h3>Useful formats</h3><p>Resize and convert between common image formats for online forms and everyday tasks.</p></article>
+    </div>
+    <div style="height:54px"></div>
+    <div class="section-title"><h2>How it works</h2><p>Three simple steps to get your file ready.</p></div>
+    <div class="how"><article class="step"><span class="num">01</span><h3>Choose your image</h3><p>Select a JPG, PNG or WebP image from your phone or computer.</p></article><article class="step"><span class="num">02</span><h3>Pick your settings</h3><p>Select a target size, dimensions or output format.</p></article><article class="step"><span class="num">03</span><h3>Download the result</h3><p>Preview the output size and download your processed image.</p></article></div>
+    <div style="height:54px"></div>
+    <div class="section-title" id="privacy"><h2>Privacy comes first</h2><p>For this starter version, image processing runs on your device using your browser. Files are not intentionally sent to a server.</p></div>
+    <div class="faq">
+      <details><summary>Are my images uploaded to a server?</summary><p>No. This page uses your browser's image decoding and canvas features. The selected image is processed locally; there is no image-upload endpoint in this starter version.</p></details>
+      <details><summary>Will every image reach exactly 20 KB?</summary><p>Not always. The tool tries to stay at or below your chosen maximum by adjusting quality and dimensions. Extremely small targets may not be achievable while keeping useful image quality. The actual output size is always shown.</p></details>
+      <details><summary>Which formats are supported?</summary><p>This starter supports common JPG, PNG and WebP images. Some formats such as HEIC may not open in every browser.</p></details>
+    </div>
+  </section>
+  <footer class="footer"><div class="wrap footer-inner"><div><a class="brand" href="#home"><span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.8h8l4 4V20a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 5 20V5.3A1.5 1.5 0 0 1 6.5 3.8Z"/><path d="M14 4v4h4M8 13h8M8 17h6"/></svg></span>TOOLZEN</a><small>Working name · Free browser-based tools</small></div><div class="footer-links"><a href="#tools">Tools</a><a href="#how">How it works</a><a href="#privacy">Privacy</a></div><small>© <span id="year"></span> ToolZen. Built for simpler files.</small></div></footer>
+  <div class="toast" id="toast" role="status"></div>
+<script>
+(() => {
+  'use strict';
+  const $ = (id) => document.getElementById(id);
+  const state = { file: null, image: null, tab: 'compress', outputBlob: null, outputUrl: null, outputName: '' };
+  const fileInput = $('fileInput'), dropzone = $('dropzone'), processBtn = $('processBtn');
+  const MAX_INPUT = 25 * 1024 * 1024;
+  const MAX_PIXELS = 40_000_000;
+  $('year').textContent = new Date().getFullYear();
+  $('menubtn').addEventListener('click', () => { const open = $('navlinks').classList.toggle('open'); $('menubtn').setAttribute('aria-expanded', String(open)); });
+  document.querySelectorAll('.navlinks a').forEach(a => a.addEventListener('click', () => $('navlinks').classList.remove('open')));
+
+  function formatBytes(bytes) { if (bytes < 1024) return `${bytes} B`; if (bytes < 1024*1024) return `${(bytes/1024).toFixed(1)} KB`; return `${(bytes/1024/1024).toFixed(2)} MB`; }
+  function toast(message) { const el = $('toast'); el.textContent = message; el.classList.add('show'); setTimeout(() => el.classList.remove('show'), 2600); }
+  function showError(message) { $('errorBox').textContent = message; $('errorBox').style.display = 'block'; }
+  function clearError() { $('errorBox').style.display = 'none'; $('errorBox').textContent = ''; }
+  function setProgress(value, message) { $('progress').style.display = 'block'; $('progressBar').style.width = `${Math.max(0,Math.min(100,value))}%`; $('status').textContent = message; }
+  function clearProgress() { $('progress').style.display = 'none'; $('progressBar').style.width = '0%'; }
+  function releaseOutput() { if (state.outputUrl) URL.revokeObjectURL(state.outputUrl); state.outputUrl = null; state.outputBlob = null; $('result').style.display = 'none'; }
+  function clearFile() { if (state.image && state.image.close) state.image.close(); state.file = null; state.image = null; fileInput.value = ''; $('fileMeta').style.display = 'none'; $('previewHint').textContent = ''; $('status').textContent = 'Choose an image to begin.'; processBtn.disabled = true; clearError(); clearProgress(); releaseOutput(); }
+  function setTab(tab) {
+    state.tab = tab;
+    document.querySelectorAll('.tab').forEach(b => { const active = b.dataset.tab === tab; b.classList.toggle('active', active); b.setAttribute('aria-selected', String(active)); });
+    $('compressSettings').classList.toggle('hidden', tab !== 'compress'); $('resizeSettings').classList.toggle('hidden', tab !== 'resize'); $('convertSettings').classList.toggle('hidden', tab !== 'convert');
+    $('settingsTitle').textContent = tab === 'compress' ? 'Compression settings' : tab === 'resize' ? 'Resize settings' : 'Conversion settings';
+    processBtn.textContent = tab === 'compress' ? 'Compress image' : tab === 'resize' ? 'Resize image' : 'Convert image';
+    processBtn.disabled = !state.file; clearError(); releaseOutput();
+  }
+  document.querySelectorAll('.tab').forEach(b => b.addEventListener('click', () => setTab(b.dataset.tab)));
+  $('chooseBtn').addEventListener('click', () => fileInput.click());
+  $('removeBtn').addEventListener('click', clearFile);
+  fileInput.addEventListener('change', e => { if (e.target.files && e.target.files[0]) loadFile(e.target.files[0]); });
+  ['dragenter','dragover'].forEach(name => dropzone.addEventListener(name, e => { e.preventDefault(); dropzone.classList.add('drag'); }));
+  ['dragleave','drop'].forEach(name => dropzone.addEventListener(name, e => { e.preventDefault(); dropzone.classList.remove('drag'); }));
+  dropzone.addEventListener('drop', e => { const f = e.dataTransfer.files && e.dataTransfer.files[0]; if (f) loadFile(f); });
+  function loadFile(file) {
+    clearError(); releaseOutput();
+    state.file = null; state.image = null; processBtn.disabled = true;
+    $('fileMeta').style.display = 'none';
+    if (!file.type.startsWith('image/')) { showError('Please choose an image file.'); return; }
+    if (file.size > MAX_INPUT) { showError('This starter version supports images up to 25 MB. Please choose a smaller image.'); return; }
+    if (!['image/jpeg','image/png','image/webp','image/gif'].includes(file.type)) { showError('This format may not be supported by your browser. Please use JPG, PNG or WebP.'); return; }
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload = () => {
+      if (img.naturalWidth * img.naturalHeight > MAX_PIXELS) {
+        URL.revokeObjectURL(url); showError('This image has very large dimensions. Please use an image under 40 megapixels.'); return;
+      }
+      if (state.image && state.image.close) state.image.close();
+      state.file = file; state.image = img;
+      $('fileThumb').src = url; $('fileName').textContent = file.name; $('fileSize').textContent = `${formatBytes(file.size)} · ${img.naturalWidth} × ${img.naturalHeight}px`;
+      $('fileMeta').style.display = 'flex'; $('status').textContent = 'Image ready. Choose settings and process.'; processBtn.disabled = false; clearError(); clearProgress();
+      $('widthInput').value = img.naturalWidth; $('heightInput').value = img.naturalHeight;
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); showError('Could not open this image. Try a JPG, PNG or WebP file.'); };
+    img.src = url;
+  }
+  document.querySelectorAll('.preset').forEach(b => b.addEventListener('click', () => { document.querySelectorAll('.preset').forEach(x => x.classList.remove('active')); b.classList.add('active'); $('customKB').value = ''; }));
+  $('customKB').addEventListener('input', () => document.querySelectorAll('.preset').forEach(x => x.classList.remove('active')));
+  function selectedTargetBytes() {
+    const custom = $('customKB').value.trim();
+    let kb;
+    if (custom) kb = Number(custom);
+    else { const active = document.querySelector('.preset.active'); kb = active ? Number(active.dataset.kb) : 200; }
+    if (!Number.isFinite(kb) || kb < 20 || kb > 5120) throw new Error('Enter a custom size between 20 KB and 5120 KB.');
+    return Math.round(kb * 1024);
+  }
+  function canvasBlob(canvas, type, quality) { return new Promise((resolve, reject) => canvas.toBlob(blob => blob ? resolve(blob) : reject(new Error('Your browser could not create this image format. Try JPG or WebP.')), type, quality)); }
+  function makeCanvas(width, height, image, type) {
+    const canvas = document.createElement('canvas'); canvas.width = Math.max(1,Math.round(width)); canvas.height = Math.max(1,Math.round(height));
+    const ctx = canvas.getContext('2d', { alpha: type !== 'image/jpeg' });
+    if (!ctx) throw new Error('Canvas is not available in this browser.');
+    if (type === 'image/jpeg') { ctx.fillStyle = '#ffffff'; ctx.fillRect(0,0,canvas.width,canvas.height); }
+    ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = 'high'; ctx.drawImage(image,0,0,canvas.width,canvas.height); return canvas;
+  }
+  async function compressToTarget(targetBytes, type) {
+    const img = state.image; let width = img.naturalWidth, height = img.naturalHeight; let best = null; let passes = 0;
+    while (passes < 14) {
+      const canvas = makeCanvas(width,height,img,type);
+      let low = 0.28, high = 0.94, fit = null;
+      for (let i=0;i<8;i++) {
+        const q = (low+high)/2; const blob = await canvasBlob(canvas,type,q);
+        setProgress(12 + passes*5 + i*0.45, `Optimizing image… pass ${passes+1}`);
+        if (blob.size <= targetBytes) { fit = blob; low = q; } else high = q;
+      }
+      if (fit) { best = {blob:fit,width,height}; break; }
+      const lowest = await canvasBlob(canvas,type,0.28);
+      if (lowest.size <= targetBytes) { best = {blob:lowest,width,height}; break; }
+      best = {blob:lowest,width,height};
+      if (width <= 160 && height <= 160) break;
+      const nextWidth = Math.max(80,Math.round(width*0.84));
+      const nextHeight = Math.max(80,Math.round(height*0.84));
+      if (nextWidth === width && nextHeight === height) break;
+      width = nextWidth; height = nextHeight;
+      passes++;
+    }
+    if (!best) throw new Error('Could not compress this image. Try another file.');
+    return best;
+  }
+  function showResult(blob, name, originalSize, note, dimensions) {
+    releaseOutput(); state.outputBlob = blob; state.outputUrl = URL.createObjectURL(blob); state.outputName = name;
+    $('resultImg').src = state.outputUrl;
+    const reduction = originalSize ? Math.max(0,(1-blob.size/originalSize)*100) : 0;
+    $('stats').innerHTML = `<span class="stat"><strong>${formatBytes(originalSize)}</strong>Original</span><span class="stat"><strong>${formatBytes(blob.size)}</strong>Result</span><span class="stat"><strong>${reduction.toFixed(1)}%</strong>Size reduction</span>${dimensions ? `<span class="stat"><strong>${dimensions.width} × ${dimensions.height}</strong>Dimensions</span>` : ''}`;
+    $('resultNote').textContent = note; $('result').style.display = 'block'; $('status').textContent = 'Done. Your file is ready to download.'; clearProgress(); $('result').scrollIntoView({behavior:'smooth',block:'nearest'});
+  }
+  $('downloadBtn').addEventListener('click', () => { if (!state.outputBlob || !state.outputUrl) return; const a = document.createElement('a'); a.href = state.outputUrl; a.download = state.outputName; document.body.appendChild(a); a.click(); a.remove(); });
+  function extFor(type) { return type === 'image/jpeg' ? 'jpg' : type === 'image/png' ? 'png' : 'webp'; }
+  async function processImage() {
+    if (!state.file || !state.image) return;
+    processBtn.disabled = true; clearError(); releaseOutput(); setProgress(5,'Starting…');
+    try {
+      let blob, dims, note, type, base = state.file.name.replace(/\.[^.]+$/,'').replace(/[^a-z0-9-_]/gi,'_') || 'image';
+      if (state.tab === 'compress') {
+        const target = selectedTargetBytes(); type = $('compressFormat').value;
+        const result = await compressToTarget(target,type); blob = result.blob; dims = {width:result.width,height:result.height};
+        note = blob.size <= target ? `Success: output is within your ${formatBytes(target)} maximum target.` : `The image could not reach ${formatBytes(target)} without excessive quality loss. Best effort result is shown; try a larger target for better quality.`;
+        if (blob.size > target) toast('Target size could not be reached at usable quality.');
+      } else if (state.tab === 'resize') {
+        type = $('resizeFormat').value; let w = Number($('widthInput').value), h = Number($('heightInput').value);
+        if (!Number.isInteger(w)||!Number.isInteger(h)||w<1||h<1||w>10000||h>10000) throw new Error('Enter width and height between 1 and 10,000 pixels.');
+        if ($('keepRatio').checked) { const ratio = state.image.naturalWidth/state.image.naturalHeight; if (w/h > ratio) w = Math.round(h*ratio); else h = Math.round(w/ratio); }
+        const canvas = makeCanvas(w,h,state.image,type); blob = await canvasBlob(canvas,type,0.9); dims = {width:w,height:h}; note = 'Image resized in your browser. The exported file may be larger or smaller depending on format and dimensions.';
+      } else {
+        type = $('convertFormat').value; const canvas = makeCanvas(state.image.naturalWidth,state.image.naturalHeight,state.image,type); blob = await canvasBlob(canvas,type,type==='image/png'?undefined:0.92); dims = {width:canvas.width,height:canvas.height}; note = 'Image format converted in your browser. If the source had transparency and you chose JPG, transparent areas were filled with white.';
+      }
+      showResult(blob,`${base}-toolzen.${extFor(type)}`,state.file.size,note,dims);
+    } catch (err) { showError(err && err.message ? err.message : 'Something went wrong. Please try another image.'); $('status').textContent = 'Could not process this image.'; clearProgress(); }
+    finally { processBtn.disabled = !state.file; }
+  }
+  processBtn.addEventListener('click',processImage);
+})();
+</script>
+</body>
+</html>
